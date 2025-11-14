@@ -65,7 +65,7 @@ namespace ChatClientApp
             {
                 Console.WriteLine(_messages[i].ToString());
             }
-            Console.WriteLine("------------------------------");
+            Console.WriteLine("-----------------------------");
         }
     }
 }
