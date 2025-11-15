@@ -19,6 +19,27 @@ C:\Users\Mohammed\RiderProjects\Chat-App\ChatClient\obj\Debug\net9.0\refint\Chat
 C:\Users\Mohammed\RiderProjects\Chat-App\ChatClient\obj\Debug\net9.0\ChatClientApp.pdb
 C:\Users\Mohammed\RiderProjects\Chat-App\ChatClient\obj\Debug\net9.0\ChatClientApp.genruntimeconfig.cache
 C:\Users\Mohammed\RiderProjects\Chat-App\ChatClient\obj\Debug\net9.0\ref\ChatClientApp.dll
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\ChatClientApp.exe
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\ChatClientApp.deps.json
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\ChatClientApp.runtimeconfig.json
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\ChatClientApp.dll
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\ChatClientApp.pdb
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\SocketIO.Core.dll
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\SocketIO.Serializer.Core.dll
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\SocketIO.Serializer.SystemTextJson.dll
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\SocketIOClient.dll
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\ChatClientApp.csproj.AssemblyReference.cache
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\ChatClientApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\ChatClientApp.AssemblyInfoInputs.cache
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\ChatClientApp.AssemblyInfo.cs
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\ChatClientApp.csproj.CoreCompileInputs.cache
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\ChatClientApp.sourcelink.json
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\ChatClie.42131F76.Up2Date
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\ChatClientApp.dll
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\refint\ChatClientApp.dll
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\ChatClientApp.pdb
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\ChatClientApp.genruntimeconfig.cache
+C:\Users\Acer Laptop\RiderProjects\Chat.App\ChatClient\obj\Debug\net9.0\ref\ChatClientApp.dll
 C:\Users\Mohammed\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\ChatClientApp.exe
 C:\Users\Mohammed\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\ChatClientApp.deps.json
 C:\Users\Mohammed\RiderProjects\Chat.App\ChatClient\bin\Debug\net9.0\ChatClientApp.runtimeconfig.json

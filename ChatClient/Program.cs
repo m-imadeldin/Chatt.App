@@ -19,7 +19,15 @@ namespace ChatClientApp
             var history = new MessageHistory();
             history.Load();
 
-            var client = new ChatClient(user, history);
+            Console.Write("Enter server URL (e.g. http://localhost:3000 or https://api.example.com): ");
+            string? serverUrl = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(serverUrl))
+            {
+                Console.WriteLine("No server URL provided. Exiting.");
+                return;
+            }
+
+            var client = new ChatClient(user, history, serverUrl.Trim());
             var handler = new CommandHandler(client, history);
 
             await client.ConnectAsync();
@@ -42,4 +50,3 @@ namespace ChatClientApp
         }
     }
 }
-

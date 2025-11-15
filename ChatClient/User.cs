@@ -2,7 +2,7 @@ namespace ChatClientApp
 {
     public class User
     {
-        public string Username;
+        public string Username { get; set; }
 
         public User(string username)
         {
