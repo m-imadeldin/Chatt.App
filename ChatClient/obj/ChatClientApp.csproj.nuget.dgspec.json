@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mohammed\\RiderProjects\\Chat-App\\ChatClient\\ChatClientApp.csproj": {}
+    "C:\\Users\\Mohammed\\RiderProjects\\Chat.App\\ChatClient\\ChatClientApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mohammed\\RiderProjects\\Chat-App\\ChatClient\\ChatClientApp.csproj": {
+    "C:\\Users\\Mohammed\\RiderProjects\\Chat.App\\ChatClient\\ChatClientApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mohammed\\RiderProjects\\Chat-App\\ChatClient\\ChatClientApp.csproj",
+        "projectUniqueName": "C:\\Users\\Mohammed\\RiderProjects\\Chat.App\\ChatClient\\ChatClientApp.csproj",
         "projectName": "ChatClientApp",
-        "projectPath": "C:\\Users\\Mohammed\\RiderProjects\\Chat-App\\ChatClient\\ChatClientApp.csproj",
+        "projectPath": "C:\\Users\\Mohammed\\RiderProjects\\Chat.App\\ChatClient\\ChatClientApp.csproj",
         "packagesPath": "C:\\Users\\Mohammed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mohammed\\RiderProjects\\Chat-App\\ChatClient\\obj\\",
+        "outputPath": "C:\\Users\\Mohammed\\RiderProjects\\Chat.App\\ChatClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mohammed\\AppData\\Roaming\\NuGet\\NuGet.Config"

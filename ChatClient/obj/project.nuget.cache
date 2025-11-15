@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V4so6QD68v4=",
+  "dgSpecHash": "EpNjOSEROww=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mohammed\\RiderProjects\\Chat-App\\ChatClient\\ChatClientApp.csproj",
+  "projectFilePath": "C:\\Users\\Mohammed\\RiderProjects\\Chat.App\\ChatClient\\ChatClientApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mohammed\\.nuget\\packages\\socketio.core\\3.1.2\\socketio.core.3.1.2.nupkg.sha512",
     "C:\\Users\\Mohammed\\.nuget\\packages\\socketio.serializer.core\\3.1.2\\socketio.serializer.core.3.1.2.nupkg.sha512",

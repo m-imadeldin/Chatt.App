@@ -27,16 +27,20 @@ namespace ChatClientApp
             _client.OnConnected += async (sender, e) =>
             {
                 Console.WriteLine("Connected to chat!");
-                await _client.EmitAsync("join", _user.Username);
+                await _client.EmitAsync("chat_join", _user.Username);
             };
 
             _client.On("message", response =>
             {
                 try
                 {
-                    var msg = response.GetValue<Message>();
-                    Console.WriteLine(msg.ToString());
-                    _history.Add(msg);
+                    var obj = response.GetValue<System.Text.Json.Nodes.JsonObject>();
+                    string sender = obj["username"]?.ToString() ?? "Unknown";
+                    string text = obj["message"]?.ToString() ?? "";
+                    string time = obj["time"]?.ToString() ?? "";
+                    
+                    Console.WriteLine($"[{time}] {sender}: {text}");
+                    
                 }
                 catch
                 {
@@ -92,7 +96,7 @@ namespace ChatClientApp
                 Timestamp = DateTime.Now
             };
 
-            await _client.EmitAsync("message", msg);
+            await _client.EmitAsync("chat_message", msg);
             _history.Add(msg);
         }
 
