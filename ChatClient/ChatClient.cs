@@ -142,8 +142,7 @@ namespace ChatClientApp
                         Console.WriteLine("Använd: /history <antal>");
                         return;
                     }
-                    var last = _history.GetLast(count);
-                    foreach (var m in last) Console.WriteLine(m.ToString());
+                    _history.ShowLast(count);
                     break;
 
                 case "/dm":
