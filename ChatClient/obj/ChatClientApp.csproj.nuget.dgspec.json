@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer Laptop\\RiderProjects\\ChatApp\\ChatClient\\ChatClientApp\\ChatClientApp.csproj": {}
+    "C:\\Users\\Mohammed\\RiderProjects\\Chat-App\\ChatClient\\ChatClientApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer Laptop\\RiderProjects\\ChatApp\\ChatClient\\ChatClientApp\\ChatClientApp.csproj": {
+    "C:\\Users\\Mohammed\\RiderProjects\\Chat-App\\ChatClient\\ChatClientApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer Laptop\\RiderProjects\\ChatApp\\ChatClient\\ChatClientApp\\ChatClientApp.csproj",
+        "projectUniqueName": "C:\\Users\\Mohammed\\RiderProjects\\Chat-App\\ChatClient\\ChatClientApp.csproj",
         "projectName": "ChatClientApp",
-        "projectPath": "C:\\Users\\Acer Laptop\\RiderProjects\\ChatApp\\ChatClient\\ChatClientApp\\ChatClientApp.csproj",
-        "packagesPath": "C:\\Users\\Acer Laptop\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer Laptop\\RiderProjects\\ChatApp\\ChatClient\\ChatClientApp\\obj\\",
+        "projectPath": "C:\\Users\\Mohammed\\RiderProjects\\Chat-App\\ChatClient\\ChatClientApp.csproj",
+        "packagesPath": "C:\\Users\\Mohammed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mohammed\\RiderProjects\\Chat-App\\ChatClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Acer Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Mohammed\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -62,30 +60,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.9, 9.0.9]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[9.0.9, 9.0.9]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.9, 9.0.9]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[9.0.9, 9.0.9]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.1.25451.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

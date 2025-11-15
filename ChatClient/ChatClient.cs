@@ -64,6 +64,12 @@ namespace ChatClientApp
                 Console.WriteLine($"*** {name} has left ***");
             });
 
+            _client.On("typing", res =>
+            {
+                var name = res.GetValue<string>();
+                Console.WriteLine($"({name} skriver...)");
+            });
+
             _client.OnDisconnected += (s, e) =>
             {
                 Console.WriteLine("Disconnected from server.");
@@ -76,7 +82,16 @@ namespace ChatClientApp
         public async Task SendMessageAsync(string text)
         {
             if (string.IsNullOrWhiteSpace(text)) return;
-            var msg = new Message { Sender = _user.Username, Text = text, Timestamp = DateTime.Now };
+
+            await _client.EmitAsync("typing", _user.Username);
+
+            var msg = new Message
+            {
+                Sender = _user.Username,
+                Text = text,
+                Timestamp = DateTime.Now
+            };
+
             await _client.EmitAsync("message", msg);
             _history.Add(msg);
         }
@@ -84,6 +99,7 @@ namespace ChatClientApp
         public async Task SendPrivateMessageAsync(string recipient, string text)
         {
             if (string.IsNullOrWhiteSpace(recipient) || string.IsNullOrWhiteSpace(text)) return;
+
             var msg = new Message
             {
                 Sender = _user.Username,
@@ -92,9 +108,57 @@ namespace ChatClientApp
                 Recipient = recipient,
                 Timestamp = DateTime.Now
             };
+
             await _client.EmitAsync("private_message", msg);
             _history.Add(msg);
+
             Console.WriteLine($"(DM to {recipient}) {text}");
+        }
+
+        public async Task HandleCommandAsync(string input)
+        {
+            if (!input.StartsWith("/")) return;
+
+            var parts = input.Split(' ', 3, StringSplitOptions.RemoveEmptyEntries);
+            var cmd = parts[0].ToLower();
+
+            switch (cmd)
+            {
+                case "/help":
+                    Console.WriteLine("Kommandon:");
+                    Console.WriteLine("/help - visa hjälp");
+                    Console.WriteLine("/quit - lämna chatten");
+                    Console.WriteLine("/history X - visa senaste X meddelanden");
+                    Console.WriteLine("/dm <user> <text> - skicka privat meddelande");
+                    break;
+
+                case "/quit":
+                    await DisconnectAsync();
+                    break;
+
+                case "/history":
+                    if (parts.Length < 2 || !int.TryParse(parts[1], out int count))
+                    {
+                        Console.WriteLine("Använd: /history <antal>");
+                        return;
+                    }
+                    var last = _history.GetLast(count);
+                    foreach (var m in last) Console.WriteLine(m.ToString());
+                    break;
+
+                case "/dm":
+                    if (parts.Length < 3)
+                    {
+                        Console.WriteLine("Använd: /dm <user> <text>");
+                        return;
+                    }
+                    await SendPrivateMessageAsync(parts[1], parts[2]);
+                    break;
+
+                default:
+                    Console.WriteLine("Okänt kommando. Skriv /help.");
+                    break;
+            }
         }
 
         public async Task DisconnectAsync()
@@ -104,11 +168,13 @@ namespace ChatClientApp
                 await _client.EmitAsync("leave", _user.Username);
             }
             catch { }
+
             try
             {
                 await _client.DisconnectAsync();
             }
             catch { }
+
             Console.WriteLine("You have left the chat.");
         }
     }
